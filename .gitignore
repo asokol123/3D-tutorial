@@ -2,3 +2,4 @@
 /**/.cache
 /src/docs
 /src/resources/*.json
+/.vscode

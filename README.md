@@ -24,3 +24,11 @@ python ./resources/generate.py
 
 ## Как это выглядит
 ![Скриншот](./images/example.png)
+
+## Автоматическая документация
+С использованием `doxygen`:
+```bash
+cd src
+doxygen doxygen
+```
+После этого открыть в браузере файл `src/docs/html/index.html`
