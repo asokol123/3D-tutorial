@@ -1,0 +1,4 @@
+project(3D)
+
+file(GLOB SRC_FILES "*.cpp")
+set(SOURCE_LIB ${SOURCE_LIB} ${SRC_FILES} PARENT_SCOPE)

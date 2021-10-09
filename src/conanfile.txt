@@ -1,0 +1,8 @@
+[requires]
+sfml/2.5.1@bincrafters/stable
+eigen/3.4.0
+glog/0.5.0
+nlohmann_json/3.10.2
+
+[generators]
+cmake

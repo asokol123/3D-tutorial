@@ -1,0 +1,4 @@
+/**/build
+/**/.cache
+/src/docs
+/src/resources/*.json
