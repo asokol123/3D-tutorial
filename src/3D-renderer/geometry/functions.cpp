@@ -83,10 +83,10 @@ auto Clip(const TTriangle4d& triangle) -> std::vector<TTriangle4d> {
     LOG(INFO) << "After clipping by min: " << trianglesClippedByMin.size();
 
     std::vector<TTriangle4d> trianglesClipped;
-    for (auto&& triangle : std::move(trianglesClippedByMin)) {
+    for (const auto& triangle : trianglesClippedByMin) {
         // we could use insert to end, but here we are moving triangles insted of copying
         LOG(INFO) << "Clipping by max: " << triangle << ", maxZ: " << maxZ;
-        for (auto&& clipped : ClipByPlane(triangle, maxZ, ESide::E_GREATER)) {
+        for (const auto& clipped : ClipByPlane(triangle, maxZ, ESide::E_GREATER)) {
             trianglesClipped.push_back(clipped);
         }
     }
