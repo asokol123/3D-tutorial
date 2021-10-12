@@ -19,6 +19,14 @@
 * `cmake`
 
 ## Как собрать код
+
+`SFML` есть только в пользовательском репозитории `bincrafters`. Поэтому сначала надо настроить `conan`.
+
+```bash
+conan remote add bincrafters https://bincrafters.jfrog.io/artifactory/api/conan/public-conan
+conan config set general.revisions_enabled=1
+```
+
 ```bash
 mkdir src/build
 cd src/build
